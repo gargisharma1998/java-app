@@ -5,7 +5,11 @@ pipeline {
       stage('Docker build') {
          steps {
            sh 'docker build -t gargisharma20/springjava:complete'.
-           sh 'docker push gargisharma20/springjava:complete'
+         }
+      }
+      stage('Push image to Dockerhub') {
+         steps {
+            sh 'docker push gargisharma20/springjava:complete'
          }
       }
       stage('deploy container on minkube cluster')

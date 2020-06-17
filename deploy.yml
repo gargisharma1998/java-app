@@ -16,5 +16,5 @@ spec:
       - name: java-app
         image: gargisharma20/springjava
         ports:
-        - containerPort: 8080
+        - containerPort: 80
 

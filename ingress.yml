@@ -12,5 +12,5 @@ spec:
        - path: /
          backend:
            serviceName: java-app
-           servicePort: 80
+           servicePort: 8080
 
